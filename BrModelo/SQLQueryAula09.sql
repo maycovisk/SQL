@@ -50,10 +50,16 @@ SELECT * FROM FUNCIONARIOS
 GO
 
 --Exibe algumas informações dos funcionarios,
---utilizando aliases (AS) ára açgi,as colunas
+--utilizando aliases (AS) para algumas colunas
 SELECT ID AS 'Código do Funcionário',
 	NOME,
 	Sexo,
 	Salario 'Salário'
 FROM FUNCIONARIOS
+GO
+
+--Exibe todos os dados da tabela
+--FUNCIONARIOS. Utiliza TOP para listar
+--somente os 3 primeiros registros
+SELECT TOP 3 * FROM FUNCIONARIOS
 GO
